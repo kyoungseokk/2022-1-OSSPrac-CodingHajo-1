@@ -1,5 +1,6 @@
-service:
+services:
   webapp:
-    image: 
+    image: codinghajo_image
+    build: .
     ports:
       - "80:80"
