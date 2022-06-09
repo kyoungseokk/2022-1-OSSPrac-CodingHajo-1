@@ -3,4 +3,4 @@ services:
     image: codinghajo_image
     build: .
     ports:
-      - "8181:8080"
+      - "80:80"
