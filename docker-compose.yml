@@ -2,7 +2,7 @@ services:
   webapp:
     image: ${choisy0114}/codinghajo_4
     build: .
+    ports:
+  - "80:80"
   production:
     image:${choisy0114}/codinghajo_4:${1.0}
-    ports:
-      - "80:80"
