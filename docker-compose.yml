@@ -3,6 +3,6 @@ services:
     image: ${choisy0114}/codinghajo_4
     build: .
     ports:
-  - "80:80"
+    - "80:80"
   production:
     image:${choisy0114}/codinghajo_4:${1.0}
