@@ -1,8 +1,10 @@
+version: "3"
 services:
-  webapp:
-    image: ${choisy0114}/codinghajo_4
+  web:
+    image: ${DOCKER_USER_ID}/codinghajo_4
     build: .
-  production:
-    image:${choisy0114}/codinghajo_4:${1.0}
     ports:
-      - "80:80"
+    - "80:80"
+
+  production:
+    image: ${DOCKER_USER_ID}/codinghajo_4:${BUILD_NUMBER}
