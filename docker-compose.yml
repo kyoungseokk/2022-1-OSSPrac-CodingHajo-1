@@ -1,10 +1,10 @@
 services:
   webapp:
-    image: ${yaena1223}/codinghajo_1
+    image: ${DOCKER_USER_ID}/codinghajo_4
     build: .
     ports:
     - "80:80"
 
   production:
-    image: ${yaena1223}/codinghajo_1:${2.0}
+    image: ${DOCKER_USER_ID}/codinghajo_4:${BUILD_NUMBER}
 
