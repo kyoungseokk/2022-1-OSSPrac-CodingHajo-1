@@ -1,8 +1,11 @@
 services:
   webapp:
-    image: ${choisy0114}/codinghajo_4
+    image: ${yaena1223}/codinghajo_4
     build: .
+
+  production:
+    image: ${yaena1223}/codinghajo_4:${1.0}
+    volumes:
+      - .:/code
     ports:
     - "80:80"
-  production:
-    image: choisy0114/codinghajo_4:1.0
