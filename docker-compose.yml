@@ -5,4 +5,4 @@ services:
     ports:
     - "80:80"
   production:
-    image: ${choisy0114}/codinghajo_4:${1.0}
+    image: choisy0114/codinghajo_4:1.0
