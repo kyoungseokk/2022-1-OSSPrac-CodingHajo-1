@@ -1,10 +1,12 @@
-services:
-  web:
-    image: ${DOCKER_USER_ID}/codinghajo_4
-    build: .
-    ports:
-    - "80:80"
 
-  production:
-    image: ${DOCKER_USER_ID}/codinghajo_4:${BUILD_NUMBER}
+version: "3"
+  services:
+    web:
+      image: ${DOCKER_USER_ID}/codinghajo_4
+      build: .
+      ports:
+      - "80:80"
+
+    production:
+      image: ${DOCKER_USER_ID}/codinghajo_4:${BUILD_NUMBER}
 
