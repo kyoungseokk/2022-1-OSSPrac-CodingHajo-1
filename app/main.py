@@ -9,7 +9,7 @@ def student():
 def result():
    if request.method == 'POST':
       result = dict()
-      result['Name'] = request.form.get('Name')
+      result['Name_modify'] = request.form.get('Name_modify')
       result['Univ'] = request.form.get('Univ')
       result['Student Number'] = request.form.get('Student Number')
       result['Gender'] = request.form.get('Gender')
